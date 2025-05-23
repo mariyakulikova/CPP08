@@ -5,7 +5,7 @@ CXXFLAGS += -std=c++98
 CXXFLAGS += -MMD
 RM = rm -f
 
-SRCS =	main.cpp Span.cpp
+SRCS =	main.cpp
 
 OBJS = $(SRCS:.cpp=.o)
 DEPS = $(OBJS:.o=.d)
