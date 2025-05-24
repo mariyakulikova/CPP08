@@ -6,7 +6,7 @@
 /*   By: mkulikov <mkulikov@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/22 17:41:21 by mkulikov          #+#    #+#             */
-/*   Updated: 2025/05/23 19:24:18 by mkulikov         ###   ########.fr       */
+/*   Updated: 2025/05/24 15:25:28 by mkulikov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,16 +26,18 @@ public:
 	~MutantStack();
 
 	typedef typename std::stack<T>::container_type::iterator iterator;
-	typedef typename std::stack<T>::container_type::const_iterator const_iterator;
 	iterator begin();
 	iterator end();
+
+	typedef typename std::stack<T>::container_type::const_iterator const_iterator;
 	const_iterator begin() const;
 	const_iterator end() const;
 
 	typedef typename std::stack<T>::container_type::reverse_iterator reverse_iterator;
-	typedef typename std::stack<T>::container_type::const_reverse_iterator const_reverse_iterator;
 	reverse_iterator rbegin();
 	reverse_iterator rend();
+
+	typedef typename std::stack<T>::container_type::const_reverse_iterator const_reverse_iterator;
 	const_reverse_iterator rbegin() const;
 	const_reverse_iterator rend() const;
 };
